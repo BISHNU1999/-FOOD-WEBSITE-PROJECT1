@@ -56,3 +56,22 @@
     color: rgb(93, 21, 21);
    background-color:blue ;
 }
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+home::before{
+    content: "";
+    background-color: green;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
