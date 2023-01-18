@@ -1,0 +1,174 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/* css variables */
+:root{
+    --navbar-hight:59px;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:absolute;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: green;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* logo */
+#logo{
+    height: 80px;
+    margin: 10px 25px;
+
+}
+/* Navigation bar :Liststyling */
+
+#navbar ul {
+
+    display:flex;
+    
+}
+
+#navbar ul li{
+    /* colour: white */
+    list-style: none;
+  font-size: 1.3ram;
+}
+#navbar ul li a{
+    color: rgb(242, 233, 233);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(93, 21, 21);
+   background-color:blue ;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 596px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../back.jpg') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+
+}
+
+#home h1{
+    color:rgb(24, 1, 1);
+    text-align: center;;
+}
+#home p{
+    color:rgb(244, 236, 236);
+    text-align: center;
+    font-size: 1rem;
+}
+/* servic section */
+#services{
+    margin:px ;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px; 
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: rgb(205, 198, 198);
+    
+}
+
+#services .box img{
+  height:160px ;
+  margin: auto;
+  display: block;
+
+    
+}
+#Services.box p{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#clint-section{
+    height: 344px;
+
+}
+#clint-Section::before{
+    content: "";
+    position: absolute;
+    background: url('../bgg.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+.clint-item{
+    padding: 50px;
+}
+
+
+#clints{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#clints img{
+    height: 144px;
+
+}
+
+
+/* utility class */
+.h-primary{
+    font-size:3.8rem;
+    padding: 12px;
+
+}
+h-secondary{
+    
+    font-size:2.5rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+      border: 2px solid white;
+      background-color: brown;
+      color:white;
+      margin: 17px;
+      border-radius:10px;
+      cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
